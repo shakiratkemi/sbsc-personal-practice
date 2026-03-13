@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f7f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.challenge1 {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+#user-input {
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  width: 70%;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+#user-input:focus {
+  border-color: #6c63ff;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition:
+    transform 0.1s,
+    background 0.3s;
+}
+
+/* Primary Add Button */
+button[onclick="showUserItems()"] {
+  background-color: #6c63ff;
+  color: white;
+}
+
+/* Removal Buttons */
+#remove-first,
+#remove-last {
+  background-color: #ff6b6b;
+  color: white;
+  margin-top: 20px;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+#list-items {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align: left;
+}
+
+#list-items li {
+  background: #f9f9f9;
+  margin-bottom: 8px;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border-left: 4px solid #6c63ff;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Container for the second challenge */
+.challenge2 {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 500px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Controls layout */
+#gallery-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#img-input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  flex: 1; /* Makes input grow to fill space */
+  min-width: 200px;
+}
+
+/* Specific button colors for Challenge 2 */
+.challenge2 button {
+  background-color: #00b894; /* Fresh Green */
+  color: white;
+  font-size: 0.85rem;
+}
+
+.challenge2 button:nth-of-type(2) {
+  background-color: #0984e3; /* Blue for Slice */
+}
+
+.challenge2 button:nth-of-type(3) {
+  background-color: #6c5ce7; /* Purple for Concat */
+}
+
+/* The Gallery List */
+#gallery-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Individual Card Logic */
+#gallery-list li {
+  background: #f1f2f6;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transition: transform 0.2s;
+}
+
+#gallery-list li:hover {
+  transform: scale(1.03);
+  background: #e1e2e6;
+}
+
+/* The Delete Button inside the card */
+.delete-btn {
+  background-color: #ff7675 !important;
+  padding: 5px 10px;
+  font-size: 0.7rem;
+  margin-top: 10px;
+  width: 100%;
+}
