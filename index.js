@@ -47,3 +47,5 @@ removeLastBtn.addEventListener("click", () => {
   }
 });
 showUserItems();
+
+

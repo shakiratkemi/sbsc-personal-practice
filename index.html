@@ -17,28 +17,30 @@
     ></script>
   </head>
   <body>
-    <section class="challenge1">
-      <h2>The "Smart Shopping List" (Arrays & DOM)</h2>
-      <div>
-        <input type="text" id="user-input" />
-        <button onclick="showUserItems()">Add</button>
-        <ul id="list-items"></ul>
-      </div>
-      <button id="remove-first">Remove First</button>
-      <button id="remove-last">Remove Last</button>
-    </section>
+    <main class="main-container">
+      <section class="challenge1">
+        <h2>The "Smart Shopping List" (Arrays & DOM)</h2>
+        <div>
+          <input type="text" id="user-input" />
+          <button onclick="showUserItems()">Add</button>
+          <ul id="list-items"></ul>
+        </div>
+        <button id="remove-first">Remove First</button>
+        <button id="remove-last">Remove Last</button>
+      </section>
 
-    <section class="challenge2">
-  <h2>The Interactive Gallery</h2>
-  <div id="gallery-controls">
-    <input type="text" id="img-input" placeholder="Enter image name..." />
-    <button onclick="addToGallery()">Upload</button>
-    <button onclick="showPreview()">Show First 3 (Slice)</button>
-    <button onclick="mergeGalleries()">Add Stock Photos (Concat)</button>
-  </div>
-  
-  <ul id="gallery-list"></ul>
-</section>
+      <section class="challenge2">
+        <h2>The Interactive Gallery</h2>
+        <div id="gallery-controls">
+          <input type="text" id="img-input" placeholder="Enter image name..." />
+          <button onclick="addToGallery()">Upload</button>
+          <button onclick="showPreview()">Show First 3 (Slice)</button>
+          <button onclick="mergeGalleries()">Add Stock Photos (Concat)</button>
+        </div>
+
+        <ul id="gallery-list"></ul>
+      </section>
+    </main>
     <script src="./index.js"></script>
   </body>
 </html>
